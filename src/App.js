@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import GithubApp from './GithubApp';
+import PlayNineApp from './PlayNineApp';
 
 class App extends Component {
   render() {
@@ -9,12 +9,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to GithubCard-tutorial</h1>
+          <h1 className="App-title">Welcome to PlayNine-tutorial</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/GithubApp.js</code> and save to reload.
+          To get started, edit <code>src/PlayNineApp.js</code> and save to reload.
         </p>
-        <GithubApp></GithubApp>
+        <PlayNineApp></PlayNineApp>
       </div>
     );
   }
