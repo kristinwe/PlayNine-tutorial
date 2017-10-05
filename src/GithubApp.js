@@ -26,11 +26,7 @@ class Form extends React.Component {
     state = {userName: ''}
     handleSubmit = (event) => {
         event.preventDefault();
-        axios.get('https://api.github.com/users/'+this.state.userName)
-        // params: {
-        //     login: {this.state.userName}
-        // })
-        //axios.get('https://api.github.com/users/mojombo')
+        axios.get('https://api.github.com/users/' + this.state.userName)
         .then(resp => {
             this.props.onSubmit(resp.data);
             this.setState({ userName: '' });
@@ -45,7 +41,6 @@ class Form extends React.Component {
                 onChange={(event) => this.setState({ userName: event.target.value })}
                 placeholder="Github username" required/>
                 <button type="submit">Add card </button>
-                <button>{this.state.userName}</button>
             </form>
         );
     }
