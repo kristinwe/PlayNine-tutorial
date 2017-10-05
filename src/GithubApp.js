@@ -49,7 +49,6 @@ export default class GithubApp extends React.Component {
     render() {
         return (
             <div>
-                <Form />
                 <CardList cards={this.state.cards}/>
             </div>
         );
